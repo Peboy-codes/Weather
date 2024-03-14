@@ -50,7 +50,7 @@ const weatherData = async function (city) {
   try {
     
     //trying weather data
-    const data = await getJson(`http://api.weatherapi.com/v1/current.json?key=ccd61afa76a94046a7a103445242602&q=${city}&aqi=no`);
+    const data = await getJson(`https://cors-anywhere.herokuapp.com/http://api.weatherapi.com/v1/current.json?key=ccd61afa76a94046a7a103445242602&q=${city}&aqi=no`);
     
     console.log(data);
     
