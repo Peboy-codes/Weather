@@ -100,6 +100,10 @@ const getCity = async function() {
     const data = await resGeo.json();
     const city = data.city.toLowerCase();
     
+    const test = document.querySelector('.test');
+    
+    test.textContent = city;
+    
     //Updating DOM with city name
     weatherData(city);
     
