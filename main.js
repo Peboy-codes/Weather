@@ -102,14 +102,14 @@ const getCity = async function() {
     
     const test = document.querySelector('.test');
     
-    test.textContent = city;
+    test.textContent = data.city;
     
     //Updating DOM with city name
     weatherData(city);
     
   } catch (error) {
     //Setting a default location display
-    weatherData('ibadan');
+    weatherData('lagos');
     errorBox('Problem getting your current location');
   }
 }
